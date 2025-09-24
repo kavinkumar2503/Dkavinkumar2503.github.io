@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <button class="toggle-dark" onclick="toggleDarkMode()" title="Toggle dark mode">
+        <span id="darkIcon">🌙</span>
+    </button>
     <div class="container">
         <h2>
             <img src="images/email.png" alt="Email Icon" style="vertical-align:middle;margin-right:8px;width:48px;height:48px;"> 
@@ -14,6 +17,7 @@
         </h2>
         <textarea id="emailText" rows="6" placeholder="Paste your email text here..."></textarea>
         <button onclick="checkSpam()">Check</button>
+        <div class="spinner" id="spinner"></div>
         <div id="result"></div>
         <div class="footer">Powered by Static JavaScript &amp; CSS</div>
     </div>
